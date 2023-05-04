@@ -12,9 +12,9 @@ class PageController extends Controller
         // Seleziona tutto da movies
         $movies = Movie::all();
 
-        dd($movies);
+        // dd($movies);
 
-        return view('home');
+        return view('home', compact('movies'));
 
     }
 }
