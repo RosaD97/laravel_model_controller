@@ -10,7 +10,7 @@ class PageController extends Controller
 {
     public function index(){
         // Seleziona tutto da movies
-        $movies = Movie::all();
+        $movies = Movie::all()->sortBy('title');
 
         // dd($movies);
 
